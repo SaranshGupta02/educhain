@@ -302,9 +302,9 @@ Python 3.9+ ❌ UNSUPPORTED BY LANGCHAIN v1.0
 
 ### **After (v0.4.0)**
 ```
-langchain>✅
-langchain-openai>✅
-langchain-community>✅
+langchain>=1.0.0 ✅
+langchain-openai>=0.2.0 ✅
+langchain-community>=0.3.0 ✅
 pydantic>=2.0,<3.0 ✅
 Python 3.10+ ✅
 ```
