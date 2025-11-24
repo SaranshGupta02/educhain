@@ -115,11 +115,10 @@ Your Educhain library has been successfully migrated to use **modern, future-pro
 - "langchain",
 - "langchain-classic",
 - "pydantic",
-+ "langchain>=1.0.0",
-+ "langchain-core>=1.0.0",
-+ "langchain-text-splitters>=0.3.0",
-+ "langchain-community>=0.3.0",
-+ "langchain-openai>=0.2.0",
++ "langchain>",
++ "langchain-text-splitters",
++ "langchain-community",
++ "langchain-openai",
 + "pydantic>=2.0,<3.0",
 
 - "Programming Language :: Python :: 3.9",
@@ -303,10 +302,9 @@ Python 3.9+ ❌ UNSUPPORTED BY LANGCHAIN v1.0
 
 ### **After (v0.4.0)**
 ```
-langchain>=1.0.0 ✅
-langchain-core>=1.0.0 ✅
-langchain-openai>=0.2.0 ✅
-langchain-community>=0.3.0 ✅
+langchain>✅
+langchain-openai>✅
+langchain-community>✅
 pydantic>=2.0,<3.0 ✅
 Python 3.10+ ✅
 ```
