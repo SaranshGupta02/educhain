@@ -6,8 +6,8 @@ setup(
     packages=find_packages(),
     install_requires=[
         "langchain>=1.0.0",
-        "langchain-openai>=0.2.0",
-        "langchain-community>=0.3.0",
+        "langchain-openai>=1.1.0",
+        "langchain-community>=0.4.1",
         "pydantic>=2.0,<3.0",
         "langchain-text-splitters",
         "langchain-google-genai",
