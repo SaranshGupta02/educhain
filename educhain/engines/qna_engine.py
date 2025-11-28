@@ -21,8 +21,7 @@ from langchain_community.callbacks.manager import get_openai_callback
 from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api.formatters import TextFormatter
 import re
-from langchain_core.messages import SystemMessage
-from langchain_core.messages import HumanMessage
+from langchain.messages import SystemMessage, HumanMessage
 from educhain.core.config import LLMConfig
 from educhain.models.qna_models import (
     MCQList, ShortAnswerQuestionList, TrueFalseQuestionList,
