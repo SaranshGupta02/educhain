@@ -2,15 +2,14 @@ from setuptools import setup, find_packages
 
 setup(
     name="educhain",
-    version="0.3.13",
+    version="0.4.0",
     packages=find_packages(),
     install_requires=[
-        "langchain",
-        "langchain-core",
+        "langchain>=1.0.0",
+        "langchain-openai>=1.1.0",
+        "langchain-community>=0.4.1",
+        "pydantic>=2.0,<3.0",
         "langchain-text-splitters",
-        "langchain-community",
-        "langchain-openai",
-        "langchain-classic",  # For deprecated RetrievalQA and other legacy chains
         "langchain-google-genai",
         "openai",
         "python-dotenv",
@@ -18,7 +17,6 @@ setup(
         "PyPDF2",
         "beautifulsoup4",
         "youtube-transcript-api",
-        "pydantic",  
         "requests",
         "chromadb",
         "protobuf",
@@ -28,6 +26,9 @@ setup(
         "ipython",
         "matplotlib",
         "numpy",
+        "gtts",  # Google Text-to-Speech
+        "pydub",  # Audio processing
+        "mutagen",  # Audio metadata handling
     ],
     extras_require={
         "dev": [
@@ -47,7 +48,6 @@ setup(
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
