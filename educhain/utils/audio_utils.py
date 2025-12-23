@@ -344,12 +344,17 @@ class AudioProcessor:
             set_api_key(api_key)
             
             # Set default voice
-            voice = voice or 'Rachel'
+            voice = voice or None
             
-            # Generate audio
-            audio = generate(
+            if(voice):
+                audio = generate(
                 text=text,
                 voice=voice,
+                **kwargs
+            )
+            else:
+                audio = generate(
+                text=text,
                 **kwargs
             )
             
@@ -721,3 +726,5 @@ class AudioProcessor:
     def validate_language(self, language: str) -> bool:
         """Validate if language code is supported."""
         return language in self.supported_languages
+    
+    
